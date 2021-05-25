@@ -31,5 +31,8 @@ io.on('connection', (socket) =>{
         io.emit('server:ranking2', lostop[2]);
         io.emit('server:ranking3', lostop[3]);
         io.emit('server:ranking4', lostop[4]);
-  });
+  }); 
 });
+app.use('/', apijs);
+app.use(express.urlencoded({ extended: false }));
+module.exports = app;
