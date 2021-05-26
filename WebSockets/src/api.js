@@ -108,3 +108,4 @@ router.get('/login/:alias/:password', function(req,res){
 });
 
 module.exports.topJugadores = topJugadores;
+module.exports = router;
