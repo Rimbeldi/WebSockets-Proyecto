@@ -94,6 +94,7 @@ function comprobadorDeDatos(paramAlias, paramName, paramSurname, paramPassword/*
 router.get('/login/:alias/:password', function(req,res){
     var paramAlias = req.params.alias || '';
     var paramPassword = req.params.password || '';
+    /*
     var ok = login(paramAlias, paramPassword);
     if(ok !== false){
         res.send(ok);
@@ -102,6 +103,8 @@ router.get('/login/:alias/:password', function(req,res){
     }else if(ok === "ErrorContra"){
         res.send("ErrorContra");
     }
+    */
+   console.log("Hola");
 });
 
 module.exports.topJugadores = topJugadores;
